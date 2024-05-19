@@ -8,7 +8,7 @@
 objects_t objects;
 lv_obj_t *tick_value_change_obj;
 
-static void event_handler_cb_main_exit_btn(lv_event_t *e) {
+static void event_handler_cb_main_obj0(lv_event_t *e) {
     lv_event_code_t event = lv_event_get_code(e);
     void *flowState = e->user_data;
     if (event == LV_EVENT_PRESSED) {
@@ -41,14 +41,14 @@ void create_screen_main() {
     lv_obj_t *obj = lv_obj_create(0);
     objects.main = obj;
     lv_obj_set_pos(obj, 0, 0);
-    lv_obj_set_size(obj, 940, 500);
+    lv_obj_set_size(obj, 960, 500);
     lv_obj_clear_flag(obj, LV_OBJ_FLAG_SCROLLABLE);
     {
         lv_obj_t *parent_obj = obj;
         {
             lv_obj_t *obj = lv_obj_create(parent_obj);
             lv_obj_set_pos(obj, 0, -1);
-            lv_obj_set_size(obj, 940, 500);
+            lv_obj_set_size(obj, 960, 500);
             lv_obj_clear_flag(obj, LV_OBJ_FLAG_SCROLLABLE);
             lv_obj_set_style_bg_grad_dir(obj, LV_GRAD_DIR_VER, LV_PART_MAIN | LV_STATE_DEFAULT);
             lv_obj_set_style_bg_color(obj, lv_color_hex(0xffec85ff), LV_PART_MAIN | LV_STATE_DEFAULT);
@@ -57,14 +57,17 @@ void create_screen_main() {
             {
                 lv_obj_t *parent_obj = obj;
                 {
-                    // exit_btn
                     lv_obj_t *obj = lv_btn_create(parent_obj);
-                    objects.exit_btn = obj;
-                    lv_obj_set_pos(obj, 680, 311);
+                    objects.obj0 = obj;
+                    lv_obj_set_pos(obj, 804, -2);
                     lv_obj_set_size(obj, 100, 50);
-                    lv_obj_add_event_cb(obj, event_handler_cb_main_exit_btn, LV_EVENT_ALL, flowState);
-                    lv_obj_add_flag(obj, LV_OBJ_FLAG_SCROLL_ON_FOCUS|LV_OBJ_FLAG_HIDDEN);
+                    lv_obj_add_event_cb(obj, event_handler_cb_main_obj0, LV_EVENT_ALL, flowState);
+                    lv_obj_add_flag(obj, LV_OBJ_FLAG_SCROLL_ON_FOCUS);
                     lv_obj_clear_flag(obj, LV_OBJ_FLAG_SCROLLABLE);
+                    lv_obj_set_style_bg_color(obj, lv_color_hex(0xff009cff), LV_PART_MAIN | LV_STATE_DEFAULT);
+                    lv_obj_set_style_bg_grad_dir(obj, LV_GRAD_DIR_HOR, LV_PART_MAIN | LV_STATE_DEFAULT);
+                    lv_obj_set_style_bg_grad_color(obj, lv_color_hex(0xff0c293c), LV_PART_MAIN | LV_STATE_DEFAULT);
+                    lv_obj_set_style_bg_opa(obj, 200, LV_PART_MAIN | LV_STATE_DEFAULT);
                     {
                         lv_obj_t *parent_obj = obj;
                         {
@@ -81,7 +84,7 @@ void create_screen_main() {
                     // web site
                     lv_obj_t *obj = lv_img_create(parent_obj);
                     objects.web_site = obj;
-                    lv_obj_set_pos(obj, 749, 19);
+                    lv_obj_set_pos(obj, 17, 68);
                     lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
                     lv_img_set_src(obj, &img_web_site);
                     lv_obj_add_flag(obj, LV_OBJ_FLAG_ADV_HITTEST);
@@ -101,7 +104,7 @@ void create_screen_main() {
                     // watch
                     lv_obj_t *obj = lv_meter_create(parent_obj);
                     objects.watch = obj;
-                    lv_obj_set_pos(obj, 210, 12);
+                    lv_obj_set_pos(obj, 233, 12);
                     lv_obj_set_size(obj, 450, 450);
                     {
                         lv_meter_scale_t *scale = lv_meter_add_scale(obj);
@@ -190,7 +193,6 @@ void tick_screen_main() {
         
         static struct {
             float last_timeline_position;
-            int32_t obj_exit_btn_opacity_init_value;
             int32_t obj_web_site_x_init_value;
             int32_t obj_web_site_y_init_value;
             int32_t obj_logo_x_init_value;
@@ -201,7 +203,6 @@ void tick_screen_main() {
         
         if (anim_state.last_timeline_position == -1) {
             anim_state.last_timeline_position = 0;
-            anim_state.obj_exit_btn_opacity_init_value = lv_obj_get_style_prop(objects.exit_btn, LV_PART_MAIN, LV_STYLE_OPA).num / 255.0f;
             anim_state.obj_web_site_x_init_value = lv_obj_get_style_prop(objects.web_site, LV_PART_MAIN, LV_STYLE_X).num;
             anim_state.obj_web_site_y_init_value = lv_obj_get_style_prop(objects.web_site, LV_PART_MAIN, LV_STYLE_Y).num;
             anim_state.obj_logo_x_init_value = lv_obj_get_style_prop(objects.logo, LV_PART_MAIN, LV_STYLE_X).num;
@@ -213,38 +214,6 @@ void tick_screen_main() {
         if (timeline_position != anim_state.last_timeline_position) {
             anim_state.last_timeline_position = timeline_position;
             
-            {
-                lv_obj_t *obj = objects.exit_btn;
-                
-                float opacity_value = anim_state.obj_exit_btn_opacity_init_value;
-                
-                while (1) {
-                    // keyframe #1
-                    if (timeline_position < 0) {
-                        break;
-                    }
-                    opacity_value = 0;
-                    
-                    // keyframe #2
-                    if (timeline_position < 1) {
-                        break;
-                    }
-                    if (timeline_position >= 1 && timeline_position < 2) {
-                        float t = (timeline_position - 1) / 1;
-                        // opacity
-                        opacity_value += eez_linear(t) * (1 - opacity_value);
-                        break;
-                    }
-                    opacity_value = 1;
-                    
-                    break;
-                }
-                
-                lv_style_value_t value;
-                
-                value.num = (int32_t)roundf(opacity_value * 255.0f);
-                lv_obj_set_local_style_prop(obj, LV_STYLE_OPA, value, LV_PART_MAIN);
-            }
             {
                 lv_obj_t *obj = objects.web_site;
                 
