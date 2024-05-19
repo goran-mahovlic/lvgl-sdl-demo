@@ -1,6 +1,6 @@
 {
   "navigation": {
-    "selectedUserPageObject": "[C:/work/eez/lvgl-sdl/Meter.eez-project]:/userPages/0",
+    "selectedUserPageObject": "[Meter.eez-project]:/userPages/0",
     "subnavigationSelectedItems": {
       "variables-tab/sub-navigation/selected-item": "Widgets"
     }
@@ -26,14 +26,6 @@
             "size": 240,
             "location": "right",
             "children": [
-              {
-                "type": "tab",
-                "id": "styles",
-                "name": "Styles",
-                "component": "styles",
-                "enableClose": false,
-                "icon": "material:format_color_fill"
-              },
               {
                 "type": "tab",
                 "id": "fonts",
@@ -62,6 +54,7 @@
           },
           {
             "type": "border",
+            "selected": 0,
             "location": "bottom",
             "children": [
               {
@@ -180,16 +173,29 @@
               "type": "tabset",
               "id": "EDITORS",
               "weight": 59.99671700590939,
+              "selected": 1,
               "enableDeleteWhenEmpty": false,
               "enableClose": false,
               "children": [
                 {
                   "type": "tab",
-                  "id": "#ec7d0a0e-0ac0-4626-875e-8733a852f368",
+                  "id": "#ed77d917-dce1-4477-9cea-b2c04e6e44a3",
+                  "name": "Settings",
+                  "component": "editor",
+                  "config": {
+                    "objectPath": "[Meter.eez-project]:/settings",
+                    "subObjectPath": "[Meter.eez-project]:/settings",
+                    "permanent": false
+                  },
+                  "icon": "material:settings"
+                },
+                {
+                  "type": "tab",
+                  "id": "#a368e64c-6baf-404c-862b-9093a09d3c95",
                   "name": "Main",
                   "component": "editor",
                   "config": {
-                    "objectPath": "[C:/work/eez/lvgl-sdl/Meter.eez-project]:/userPages/0",
+                    "objectPath": "[Meter.eez-project]:/userPages/0",
                     "permanent": false
                   },
                   "icon": "svg:page"
@@ -305,41 +311,18 @@
           "id": "#7680a457-f179-4d0e-a96d-0081489f7e0c",
           "children": [
             {
-              "type": "row",
-              "id": "#19826777-f91c-4966-aa73-4a81d8076535",
+              "type": "tabset",
+              "id": "#74b07ac6-61c4-437c-bcbd-346558ba2806",
               "weight": 20,
+              "enableClose": false,
               "children": [
                 {
-                  "type": "tabset",
-                  "id": "#74b07ac6-61c4-437c-bcbd-346558ba2806",
-                  "weight": 1,
+                  "type": "tab",
+                  "id": "iext",
+                  "name": "IEXT",
+                  "component": "extension-definitions",
                   "enableClose": false,
-                  "children": [
-                    {
-                      "type": "tab",
-                      "id": "iext",
-                      "name": "IEXT",
-                      "component": "extension-definitions",
-                      "enableClose": false,
-                      "icon": "material:extension"
-                    }
-                  ]
-                },
-                {
-                  "type": "tabset",
-                  "id": "#4bdb8387-7642-4d0e-83c6-bdede79bb485",
-                  "weight": 5,
-                  "enableClose": false,
-                  "children": [
-                    {
-                      "type": "tab",
-                      "id": "scpi",
-                      "name": "SCPI",
-                      "component": "scpi",
-                      "enableClose": false,
-                      "icon": "material:navigate_next"
-                    }
-                  ]
+                  "icon": "material:extension"
                 }
               ]
             },
@@ -958,6 +941,26 @@
         "secondToPx": 200,
         "scrollLeft": 0
       }
+    },
+    "[Meter.eez-project]:/userPages/0[flow-state]": {
+      "selection": {
+        "18": {
+          "$selected": true
+        }
+      },
+      "transform": {
+        "translate": {
+          "x": -255.8084848484849,
+          "y": -147.27507575757568
+        },
+        "scale": 0.67
+      },
+      "timeline": {
+        "isEditorActive": false,
+        "position": 0,
+        "secondToPx": 200,
+        "scrollLeft": 0
+      }
     }
   },
   "activeOutputSection": 0,
@@ -974,6 +977,9 @@
   "selectedStylePropertyName": "",
   "lvglPart": "MAIN",
   "lvglState": "DEFAULT",
-  "lvglExpandedPropertiesGroup": [],
+  "lvglExpandedPropertiesGroup": [
+    "PADDING",
+    "BACKGROUND"
+  ],
   "showInactiveFlowsInDebugger": true
 }

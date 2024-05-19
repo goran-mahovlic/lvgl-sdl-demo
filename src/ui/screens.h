@@ -20,6 +20,10 @@ typedef struct _objects_t {
 
 extern objects_t objects;
 
+enum ScreensEnum {
+    SCREEN_ID_MAIN = 1,
+};
+
 void create_screen_main();
 void tick_screen_main();
 
