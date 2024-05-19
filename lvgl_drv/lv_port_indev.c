@@ -99,8 +99,8 @@ static void mouse_read(lv_indev_drv_t *indev_drv_gamepad, lv_indev_data_t *data)
             mouse_x += (x * MOUSE_SENSITIVITY) / 32768;
             if (mouse_x < 0)
                 mouse_x = 0;
-            if (mouse_x > 640)
-                mouse_x = 640;
+            if (mouse_x > 800)
+                mouse_x = 800;
         }
 
         if (SDL_abs(y) > (MOUSE_DEADZONE * 32768) / 100)
@@ -108,8 +108,8 @@ static void mouse_read(lv_indev_drv_t *indev_drv_gamepad, lv_indev_data_t *data)
             mouse_y += (y * MOUSE_SENSITIVITY) / 32768;
             if (mouse_y < 0)
                 mouse_y = 0;
-            if (mouse_y > 640)
-                mouse_y = 640;
+            if (mouse_y > 478)
+                mouse_y = 478;
         }
 
         data->point.x = (int16_t)mouse_x;
