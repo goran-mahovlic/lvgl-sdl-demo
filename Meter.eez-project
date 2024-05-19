@@ -15,7 +15,7 @@
       "extensions": [],
       "imports": [],
       "flowSupport": true,
-      "displayWidth": 960,
+      "displayWidth": 940,
       "displayHeight": 500,
       "colorFormat": "BGR",
       "description": "Example of LVGL Meter widget",
@@ -371,19 +371,6 @@
           "customOutputs": []
         },
         {
-          "objID": "33f91064-887b-4134-bfd7-db8953a753be",
-          "type": "AnimateActionComponent",
-          "left": -445,
-          "top": -489,
-          "width": 127,
-          "height": 54,
-          "customInputs": [],
-          "customOutputs": [],
-          "from": "0",
-          "to": "2",
-          "speed": "1"
-        },
-        {
           "objID": "679705d0-a1fc-4f8d-d017-88c322b50c2d",
           "type": "EvalExprActionComponent",
           "left": -545,
@@ -457,116 +444,6 @@
           "expression": "Date.getSeconds(now)"
         },
         {
-          "objID": "01d0d6b5-3e63-4939-8ec6-c159f5d3982f",
-          "type": "ConstantActionComponent",
-          "left": 0,
-          "top": -533,
-          "width": 87,
-          "height": 52,
-          "customInputs": [],
-          "customOutputs": [],
-          "value": "25"
-        },
-        {
-          "objID": "1e4d2260-7404-4062-a73b-fed598284799",
-          "type": "ConstantActionComponent",
-          "left": 0,
-          "top": -456,
-          "width": 87,
-          "height": 52,
-          "customInputs": [],
-          "customOutputs": [],
-          "value": "2"
-        },
-        {
-          "objID": "73e146a8-0da5-4738-d070-4d5be2992a87",
-          "type": "CallActionActionComponent",
-          "left": 130,
-          "top": -526,
-          "width": 95,
-          "height": 70,
-          "customInputs": [],
-          "customOutputs": [],
-          "action": "loop_value"
-        },
-        {
-          "objID": "9c038482-aca5-4e16-c443-6183592c9b42",
-          "type": "DelayActionComponent",
-          "left": -124,
-          "top": -337,
-          "width": 87,
-          "height": 54,
-          "customInputs": [],
-          "customOutputs": [],
-          "milliseconds": "250"
-        },
-        {
-          "objID": "f11f2d7e-ba5a-4624-9839-598dea6b3d39",
-          "type": "ConstantActionComponent",
-          "left": 0,
-          "top": -308,
-          "width": 87,
-          "height": 52,
-          "customInputs": [],
-          "customOutputs": [],
-          "value": "2"
-        },
-        {
-          "objID": "1c8546e5-f849-4a48-81be-17b1f0d8de70",
-          "type": "ConstantActionComponent",
-          "left": 0,
-          "top": -242,
-          "width": 87,
-          "height": 52,
-          "customInputs": [],
-          "customOutputs": [],
-          "value": "15"
-        },
-        {
-          "objID": "5141a6c8-47fe-400f-dd38-88b598939faf",
-          "type": "CallActionActionComponent",
-          "left": 134,
-          "top": -337,
-          "width": 95,
-          "height": 70,
-          "customInputs": [],
-          "customOutputs": [],
-          "action": "loop_value"
-        },
-        {
-          "objID": "b8111b6b-c8cf-4dd3-a13b-805347b3e81b",
-          "type": "ConstantActionComponent",
-          "left": 0,
-          "top": -156,
-          "width": 87,
-          "height": 52,
-          "customInputs": [],
-          "customOutputs": [],
-          "value": "20"
-        },
-        {
-          "objID": "f062f587-1f4b-4623-af34-6b48855590a1",
-          "type": "ConstantActionComponent",
-          "left": 0,
-          "top": -84,
-          "width": 87,
-          "height": 52,
-          "customInputs": [],
-          "customOutputs": [],
-          "value": "8"
-        },
-        {
-          "objID": "c416cbde-e07f-453f-c5da-a632c090a250",
-          "type": "CallActionActionComponent",
-          "left": 134,
-          "top": -140,
-          "width": 95,
-          "height": 70,
-          "customInputs": [],
-          "customOutputs": [],
-          "action": "loop_value"
-        },
-        {
           "objID": "188ac9ea-f534-46c2-fc59-dfe1d5f4d2ad",
           "type": "EndActionComponent",
           "left": 880,
@@ -580,8 +457,8 @@
           "objID": "00aedb07-4023-4699-bf70-49c40134d19f",
           "type": "LVGLPanelWidget",
           "left": 0,
-          "top": 0,
-          "width": 960,
+          "top": -1,
+          "width": 940,
           "height": 500,
           "customInputs": [],
           "customOutputs": [],
@@ -777,8 +654,8 @@
             {
               "objID": "81895c2c-6b09-4b9d-87f1-b09afd65caaf",
               "type": "LVGLImageWidget",
-              "left": 760,
-              "top": 442,
+              "left": 749,
+              "top": 19,
               "width": 142,
               "height": 12,
               "customInputs": [],
@@ -861,8 +738,8 @@
             {
               "objID": "df648ea0-4afd-41b9-df73-52e52aba2355",
               "type": "LVGLImageWidget",
-              "left": 2,
-              "top": 408,
+              "left": -1,
+              "top": 0,
               "width": 176,
               "height": 46,
               "customInputs": [],
@@ -943,347 +820,12 @@
               "angle": 0
             },
             {
-              "objID": "4451ca3f-fee1-47b8-aac0-ddee37f22c63",
-              "type": "LVGLMeterWidget",
-              "left": 330,
-              "top": -8,
-              "width": 220,
-              "height": 220,
-              "customInputs": [
-                {
-                  "objID": "9ffd41e2-8c64-4581-83e1-ee0551b42bad",
-                  "name": "needle_value",
-                  "type": "integer"
-                }
-              ],
-              "customOutputs": [],
-              "style": {
-                "objID": "4a7baac1-fb44-4b35-d626-1296dfbe74f3",
-                "useStyle": "default",
-                "conditionalStyles": [],
-                "childStyles": []
-              },
-              "timeline": [
-                {
-                  "objID": "4096c0b6-e1d7-460d-d050-ab1e6ac91fcc",
-                  "start": 0,
-                  "end": 1,
-                  "left": {
-                    "enabled": true,
-                    "value": 290,
-                    "easingFunction": "easeOutElastic"
-                  },
-                  "top": {
-                    "enabled": true,
-                    "value": 10,
-                    "easingFunction": "easeOutElastic"
-                  },
-                  "width": {
-                    "enabled": false,
-                    "easingFunction": "linear"
-                  },
-                  "height": {
-                    "enabled": false,
-                    "easingFunction": "linear"
-                  },
-                  "scale": {
-                    "enabled": false,
-                    "easingFunction": "linear"
-                  },
-                  "scaleX": {
-                    "enabled": false,
-                    "easingFunction": "linear"
-                  },
-                  "scaleY": {
-                    "enabled": false,
-                    "easingFunction": "linear"
-                  },
-                  "rotate": {
-                    "enabled": false,
-                    "easingFunction": "linear"
-                  },
-                  "opacity": {
-                    "enabled": false,
-                    "easingFunction": "linear"
-                  }
-                }
-              ],
-              "eventHandlers": [],
-              "identifier": "needle",
-              "leftUnit": "px",
-              "topUnit": "px",
-              "widthUnit": "px",
-              "heightUnit": "px",
-              "children": [],
-              "flags": "PRESS_LOCK|CLICK_FOCUSABLE|GESTURE_BUBBLE|SNAPPABLE|SCROLLABLE|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_CHAIN",
-              "hiddenFlagType": "literal",
-              "clickableFlag": true,
-              "clickableFlagType": "literal",
-              "scrollbarMode": "auto",
-              "scrollDirection": "all",
-              "checkedStateType": "literal",
-              "disabledStateType": "literal",
-              "states": "",
-              "localStyles": {
-                "objID": "4f546f9f-627e-438d-e3ed-b4be0e54e4f9",
-                "definition": {
-                  "MAIN": {
-                    "DEFAULT": {
-                      "pad_top": 10,
-                      "pad_bottom": 10,
-                      "pad_left": 10,
-                      "pad_right": 10
-                    }
-                  }
-                }
-              },
-              "scales": [
-                {
-                  "indicators": [
-                    {
-                      "objID": "be1f5d7b-ba64-4c04-f44f-8d810eb37cb0",
-                      "type": "ARC",
-                      "width": 3,
-                      "color": "#0000ff",
-                      "radiusModifier": 0,
-                      "startValue": 0,
-                      "startValueType": "literal",
-                      "endValue": 20,
-                      "endValueType": "literal"
-                    },
-                    {
-                      "objID": "c85a4494-2987-413b-d2a1-33b7f8fc444e",
-                      "type": "SCALE_LINES",
-                      "colorStart": "#0000ff",
-                      "colorEnd": "#0000ff",
-                      "local": false,
-                      "widthModifier": 0,
-                      "startValue": 0,
-                      "startValueType": "literal",
-                      "endValue": 20,
-                      "endValueType": "literal"
-                    },
-                    {
-                      "objID": "6b50bc73-038a-4a80-dedf-22154bc82f90",
-                      "type": "ARC",
-                      "width": 3,
-                      "color": "#ff0000",
-                      "radiusModifier": 0,
-                      "startValue": 80,
-                      "startValueType": "literal",
-                      "endValue": 100,
-                      "endValueType": "literal"
-                    },
-                    {
-                      "objID": "25f2e9dc-ffb5-4630-ba89-af5257f417e2",
-                      "type": "SCALE_LINES",
-                      "colorStart": "#ff0000",
-                      "colorEnd": "#ff0000",
-                      "local": false,
-                      "widthModifier": 0,
-                      "startValue": 80,
-                      "startValueType": "literal",
-                      "endValue": 100,
-                      "endValueType": "literal"
-                    },
-                    {
-                      "objID": "d354bfa9-a1a4-433a-c2ae-13ccb6a99b14",
-                      "type": "NEEDLE_LINE",
-                      "width": 4,
-                      "color": "#808080",
-                      "radiusModifier": -15,
-                      "value": "needle_value ? needle_value : 0",
-                      "valueType": "expression"
-                    }
-                  ],
-                  "objID": "919fe15b-9e1d-4c63-e906-0a10f991e706",
-                  "minorTickCount": 41,
-                  "minorTickLineWidth": 2,
-                  "minorTickLength": 10,
-                  "minorTickColor": "#a0a0a0",
-                  "nthMajor": 8,
-                  "majorTickWidth": 4,
-                  "majorTickLength": 15,
-                  "majorTickColor": "#000000",
-                  "labelGap": 10,
-                  "scaleMin": 0,
-                  "scaleMax": 100,
-                  "scaleAngleRange": 300,
-                  "scaleRotation": 120
-                }
-              ]
-            },
-            {
-              "objID": "08b4dc70-7fb3-46f2-bf3f-548b63a85a4c",
-              "type": "LVGLMeterWidget",
-              "left": 650,
-              "top": 71,
-              "width": 220,
-              "height": 220,
-              "customInputs": [
-                {
-                  "objID": "ff45a9b6-c209-4f1a-a590-77425e3bb8e6",
-                  "name": "arc1",
-                  "type": "integer"
-                },
-                {
-                  "objID": "347394a2-9177-4682-bf07-b58969c0bcd4",
-                  "name": "arc2",
-                  "type": "integer"
-                },
-                {
-                  "objID": "57a898f2-f3dc-4896-b580-01f11920b281",
-                  "name": "arc3",
-                  "type": "integer"
-                }
-              ],
-              "customOutputs": [],
-              "style": {
-                "objID": "a31ef52d-61a9-460b-b55a-fdb91c3c5e70",
-                "useStyle": "default",
-                "conditionalStyles": [],
-                "childStyles": []
-              },
-              "timeline": [
-                {
-                  "objID": "967c6930-34a2-444b-f63b-6e7f06b43e7d",
-                  "start": 0,
-                  "end": 1,
-                  "left": {
-                    "enabled": true,
-                    "value": 570,
-                    "easingFunction": "easeOutElastic"
-                  },
-                  "top": {
-                    "enabled": true,
-                    "value": 10,
-                    "easingFunction": "easeOutElastic"
-                  },
-                  "width": {
-                    "enabled": false,
-                    "easingFunction": "linear"
-                  },
-                  "height": {
-                    "enabled": false,
-                    "easingFunction": "linear"
-                  },
-                  "scale": {
-                    "enabled": false,
-                    "easingFunction": "linear"
-                  },
-                  "scaleX": {
-                    "enabled": false,
-                    "easingFunction": "linear"
-                  },
-                  "scaleY": {
-                    "enabled": false,
-                    "easingFunction": "linear"
-                  },
-                  "rotate": {
-                    "enabled": false,
-                    "easingFunction": "linear"
-                  },
-                  "opacity": {
-                    "enabled": false,
-                    "easingFunction": "linear"
-                  }
-                }
-              ],
-              "eventHandlers": [],
-              "identifier": "arcs",
-              "leftUnit": "px",
-              "topUnit": "px",
-              "widthUnit": "px",
-              "heightUnit": "px",
-              "children": [],
-              "flags": "PRESS_LOCK|CLICK_FOCUSABLE|GESTURE_BUBBLE|SNAPPABLE|SCROLLABLE|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_CHAIN",
-              "hiddenFlagType": "literal",
-              "clickableFlag": true,
-              "clickableFlagType": "literal",
-              "scrollbarMode": "auto",
-              "scrollDirection": "all",
-              "checkedStateType": "literal",
-              "disabledStateType": "literal",
-              "states": "",
-              "localStyles": {
-                "objID": "0313ec8b-2e95-46b1-f52a-de3a97a39544",
-                "definition": {
-                  "MAIN": {
-                    "DEFAULT": {
-                      "pad_top": 10,
-                      "pad_bottom": 10,
-                      "pad_left": 10,
-                      "pad_right": 10
-                    }
-                  },
-                  "INDICATOR": {
-                    "DEFAULT": {
-                      "opa": 0
-                    }
-                  }
-                }
-              },
-              "scales": [
-                {
-                  "indicators": [
-                    {
-                      "objID": "4e23a81d-3226-4e3f-e7c3-cdd3746d1fbf",
-                      "type": "ARC",
-                      "width": 10,
-                      "color": "#ff0000",
-                      "radiusModifier": 0,
-                      "startValue": 0,
-                      "startValueType": "literal",
-                      "endValue": "arc1 ? arc1 : 0",
-                      "endValueType": "expression"
-                    },
-                    {
-                      "objID": "a898f50a-16c1-4b04-f985-e7550ad11680",
-                      "type": "ARC",
-                      "width": 10,
-                      "color": "#00ff00",
-                      "radiusModifier": -10,
-                      "startValue": 0,
-                      "startValueType": "literal",
-                      "endValue": "arc2 ? arc2 : 0",
-                      "endValueType": "expression"
-                    },
-                    {
-                      "objID": "c90e6a62-181d-410d-86e0-91bfdd4d9a4a",
-                      "type": "ARC",
-                      "width": 10,
-                      "color": "#0000ff",
-                      "radiusModifier": -20,
-                      "startValue": 0,
-                      "startValueType": "literal",
-                      "endValue": "arc3 ? arc3 : 0",
-                      "endValueType": "expression"
-                    }
-                  ],
-                  "objID": "0f9bfe61-14f2-4913-c331-9b7f2793ec92",
-                  "minorTickCount": 11,
-                  "minorTickLineWidth": 2,
-                  "minorTickLength": 10,
-                  "minorTickColor": "#a0a0a0",
-                  "nthMajor": 1,
-                  "majorTickWidth": 2,
-                  "majorTickLength": 30,
-                  "majorTickColor": "#f0f0f0",
-                  "labelGap": 15,
-                  "scaleMin": 0,
-                  "scaleMax": 100,
-                  "scaleAngleRange": 270,
-                  "scaleRotation": 90
-                }
-              ]
-            },
-            {
               "objID": "6715cd44-9676-4cf8-d016-8fc74fecbfb8",
               "type": "LVGLMeterWidget",
-              "left": 50,
-              "top": 154,
-              "width": 220,
-              "height": 220,
+              "left": 210,
+              "top": 12,
+              "width": 450,
+              "height": 450,
               "customInputs": [
                 {
                   "objID": "bd191c51-5e96-4c31-bd46-1e511f0ae52b",
@@ -1384,7 +926,8 @@
                       "pad_bottom": 5,
                       "pad_left": 5,
                       "pad_right": 5,
-                      "bg_color": "#e0ecff"
+                      "bg_color": "#ffffff",
+                      "bg_opa": 180
                     }
                   }
                 }
@@ -1437,157 +980,6 @@
                   "scaleRotation": 270
                 }
               ]
-            },
-            {
-              "objID": "46a74305-2c1a-405c-a8c2-31f83ee9490c",
-              "type": "LVGLMeterWidget",
-              "left": 330,
-              "top": 234,
-              "width": 220,
-              "height": 220,
-              "customInputs": [],
-              "customOutputs": [],
-              "style": {
-                "objID": "8b1b9724-e0a7-405c-c6eb-7a2f91a78c6f",
-                "useStyle": "default",
-                "conditionalStyles": [],
-                "childStyles": []
-              },
-              "timeline": [
-                {
-                  "objID": "b53e5a38-c45f-491c-895f-e04f6e6fef14",
-                  "start": 0,
-                  "end": 1,
-                  "left": {
-                    "enabled": true,
-                    "value": 290,
-                    "easingFunction": "easeOutElastic"
-                  },
-                  "top": {
-                    "enabled": true,
-                    "value": 252,
-                    "easingFunction": "easeOutElastic"
-                  },
-                  "width": {
-                    "enabled": false,
-                    "easingFunction": "linear"
-                  },
-                  "height": {
-                    "enabled": false,
-                    "easingFunction": "linear"
-                  },
-                  "scale": {
-                    "enabled": false,
-                    "easingFunction": "linear"
-                  },
-                  "scaleX": {
-                    "enabled": false,
-                    "easingFunction": "linear"
-                  },
-                  "scaleY": {
-                    "enabled": false,
-                    "easingFunction": "linear"
-                  },
-                  "rotate": {
-                    "enabled": false,
-                    "easingFunction": "linear"
-                  },
-                  "opacity": {
-                    "enabled": false,
-                    "easingFunction": "linear"
-                  }
-                }
-              ],
-              "eventHandlers": [],
-              "identifier": "pie",
-              "leftUnit": "px",
-              "topUnit": "px",
-              "widthUnit": "px",
-              "heightUnit": "px",
-              "children": [],
-              "flags": "PRESS_LOCK|CLICK_FOCUSABLE|GESTURE_BUBBLE|SNAPPABLE|SCROLLABLE|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_CHAIN",
-              "hiddenFlagType": "literal",
-              "clickableFlag": true,
-              "clickableFlagType": "literal",
-              "scrollbarMode": "auto",
-              "scrollDirection": "all",
-              "checkedStateType": "literal",
-              "disabledStateType": "literal",
-              "states": "",
-              "localStyles": {
-                "objID": "e2d69789-ddd6-4572-bee6-b3c0411364ff",
-                "definition": {
-                  "MAIN": {
-                    "DEFAULT": {
-                      "border_opa": 0,
-                      "bg_opa": 0,
-                      "pad_top": 0,
-                      "pad_bottom": 0,
-                      "pad_left": 0,
-                      "pad_right": 0,
-                      "border_width": 0
-                    }
-                  },
-                  "INDICATOR": {
-                    "DEFAULT": {
-                      "opa": 0
-                    }
-                  }
-                }
-              },
-              "scales": [
-                {
-                  "indicators": [
-                    {
-                      "objID": "b6aafe6b-bda6-439d-b9b4-0b112de7b19b",
-                      "type": "ARC",
-                      "width": 110,
-                      "color": "#ffa305",
-                      "radiusModifier": 0,
-                      "startValue": 0,
-                      "startValueType": "literal",
-                      "endValue": 40,
-                      "endValueType": "literal"
-                    },
-                    {
-                      "objID": "3ccf10a0-df48-432a-f320-7d027f0c9f18",
-                      "type": "ARC",
-                      "width": 110,
-                      "color": "#fbff00",
-                      "radiusModifier": 0,
-                      "startValue": 40,
-                      "startValueType": "literal",
-                      "endValue": 80,
-                      "endValueType": "literal"
-                    },
-                    {
-                      "objID": "332d95cc-dedf-4156-d8b4-2909c367bb09",
-                      "type": "ARC",
-                      "width": 110,
-                      "color": "#ff7b00",
-                      "radiusModifier": 0,
-                      "startValue": 80,
-                      "startValueType": "literal",
-                      "endValue": 100,
-                      "endValueType": "literal"
-                    }
-                  ],
-                  "objID": "844f3de5-cc0f-4906-f08c-002e4f8c64b3",
-                  "minorTickCount": 0,
-                  "minorTickLineWidth": 0,
-                  "minorTickLength": 0,
-                  "minorTickColor": "#000000",
-                  "nthMajor": 0,
-                  "majorTickWidth": 0,
-                  "majorTickLength": 0,
-                  "majorTickColor": "#000000",
-                  "labelGap": 10,
-                  "scaleMin": 0,
-                  "scaleMax": 100,
-                  "scaleAngleRange": 360,
-                  "scaleRotation": 0
-                }
-              ]
             }
           ],
           "flags": "PRESS_LOCK|CLICK_FOCUSABLE|GESTURE_BUBBLE|SNAPPABLE|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_CHAIN",
@@ -1604,9 +996,10 @@
             "definition": {
               "MAIN": {
                 "DEFAULT": {
-                  "bg_grad_dir": "HOR",
-                  "bg_color": "#ffa207",
-                  "bg_grad_color": "#8d3178"
+                  "bg_grad_dir": "VER",
+                  "bg_color": "#ec85ff",
+                  "bg_grad_color": "#ff0000",
+                  "bg_grad_stop": 1500
                 }
               }
             }
@@ -1678,111 +1071,6 @@
           "input": "@seqin"
         },
         {
-          "objID": "9c23c908-a09b-4909-b752-f50a0977c498",
-          "source": "c31cae70-c61c-4426-8702-5193f05d22a2",
-          "output": "@seqout",
-          "target": "73e146a8-0da5-4738-d070-4d5be2992a87",
-          "input": "@seqin"
-        },
-        {
-          "objID": "bd131a83-c6ee-406d-a79f-fb4c1c9f5ffb",
-          "source": "c31cae70-c61c-4426-8702-5193f05d22a2",
-          "output": "@seqout",
-          "target": "9c038482-aca5-4e16-c443-6183592c9b42",
-          "input": "@seqin"
-        },
-        {
-          "objID": "cbdd5b68-f6d5-49af-85ff-42408b195b6c",
-          "source": "c31cae70-c61c-4426-8702-5193f05d22a2",
-          "output": "@seqout",
-          "target": "c416cbde-e07f-453f-c5da-a632c090a250",
-          "input": "@seqin"
-        },
-        {
-          "objID": "6daa3723-71f8-4091-a166-fbc24887ff86",
-          "source": "01d0d6b5-3e63-4939-8ec6-c159f5d3982f",
-          "output": "value",
-          "target": "73e146a8-0da5-4738-d070-4d5be2992a87",
-          "input": "f77b3d2d-f5dc-4f3c-953c-333272f3b612"
-        },
-        {
-          "objID": "531309ab-302a-4b6d-cf9c-0dd73fba1f51",
-          "source": "1e4d2260-7404-4062-a73b-fed598284799",
-          "output": "value",
-          "target": "73e146a8-0da5-4738-d070-4d5be2992a87",
-          "input": "51d762bc-8c0c-4ed2-83a9-79d408618582"
-        },
-        {
-          "objID": "1eb88713-8efd-49c2-e3f6-b9dbc6d49c8a",
-          "source": "f11f2d7e-ba5a-4624-9839-598dea6b3d39",
-          "output": "value",
-          "target": "5141a6c8-47fe-400f-dd38-88b598939faf",
-          "input": "f77b3d2d-f5dc-4f3c-953c-333272f3b612"
-        },
-        {
-          "objID": "b91dcf0a-9b8b-4af5-d2b0-fa2dfaacc3f4",
-          "source": "1c8546e5-f849-4a48-81be-17b1f0d8de70",
-          "output": "value",
-          "target": "5141a6c8-47fe-400f-dd38-88b598939faf",
-          "input": "51d762bc-8c0c-4ed2-83a9-79d408618582"
-        },
-        {
-          "objID": "1889bc0f-a30b-4e84-b122-2444e465b1bc",
-          "source": "9c038482-aca5-4e16-c443-6183592c9b42",
-          "output": "@seqout",
-          "target": "5141a6c8-47fe-400f-dd38-88b598939faf",
-          "input": "@seqin"
-        },
-        {
-          "objID": "8cb684f9-5607-4bf9-8b57-7f542234d52f",
-          "source": "b8111b6b-c8cf-4dd3-a13b-805347b3e81b",
-          "output": "value",
-          "target": "c416cbde-e07f-453f-c5da-a632c090a250",
-          "input": "f77b3d2d-f5dc-4f3c-953c-333272f3b612"
-        },
-        {
-          "objID": "d5696905-69b0-4089-b041-a87690c8479f",
-          "source": "f062f587-1f4b-4623-af34-6b48855590a1",
-          "output": "value",
-          "target": "c416cbde-e07f-453f-c5da-a632c090a250",
-          "input": "51d762bc-8c0c-4ed2-83a9-79d408618582"
-        },
-        {
-          "objID": "ff423f36-3adb-4a2f-a485-85a538ab6375",
-          "source": "73e146a8-0da5-4738-d070-4d5be2992a87",
-          "output": "83878fe1-3e95-4e6f-f17e-ae487e04a390",
-          "target": "4451ca3f-fee1-47b8-aac0-ddee37f22c63",
-          "input": "needle_value"
-        },
-        {
-          "objID": "3d07e4cf-1f2f-436d-9dd1-846f3291cb8c",
-          "source": "73e146a8-0da5-4738-d070-4d5be2992a87",
-          "output": "83878fe1-3e95-4e6f-f17e-ae487e04a390",
-          "target": "08b4dc70-7fb3-46f2-bf3f-548b63a85a4c",
-          "input": "arc1"
-        },
-        {
-          "objID": "c90aaf64-1644-4128-8d59-683f65ffc97c",
-          "source": "5141a6c8-47fe-400f-dd38-88b598939faf",
-          "output": "83878fe1-3e95-4e6f-f17e-ae487e04a390",
-          "target": "08b4dc70-7fb3-46f2-bf3f-548b63a85a4c",
-          "input": "arc2"
-        },
-        {
-          "objID": "077c30d8-3067-4a3a-b1b3-960b691d90e1",
-          "source": "c416cbde-e07f-453f-c5da-a632c090a250",
-          "output": "83878fe1-3e95-4e6f-f17e-ae487e04a390",
-          "target": "08b4dc70-7fb3-46f2-bf3f-548b63a85a4c",
-          "input": "arc3"
-        },
-        {
-          "objID": "3e3d98d4-853b-4562-a8b9-beaab4551f5b",
-          "source": "c31cae70-c61c-4426-8702-5193f05d22a2",
-          "output": "@seqout",
-          "target": "33f91064-887b-4134-bfd7-db8953a753be",
-          "input": "@seqin"
-        },
-        {
           "objID": "56a67d0f-e002-419d-fc4b-1cafc73436fa",
           "source": "8d6c11b1-f827-47ab-b843-1fab05ce1547",
           "output": "PRESSED",
@@ -1794,7 +1082,7 @@
       "name": "Main",
       "left": 0,
       "top": 0,
-      "width": 960,
+      "width": 940,
       "height": 500,
       "lvglLocalStyles": {
         "objID": "e85dbd5d-8325-1629-003b-86fd654ae635"

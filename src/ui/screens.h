@@ -9,11 +9,8 @@ extern "C" {
 
 typedef struct _objects_t {
     lv_obj_t *main;
-    lv_obj_t *arcs;
     lv_obj_t *exit_btn;
     lv_obj_t *logo;
-    lv_obj_t *needle;
-    lv_obj_t *pie;
     lv_obj_t *watch;
     lv_obj_t *web_site;
 } objects_t;
