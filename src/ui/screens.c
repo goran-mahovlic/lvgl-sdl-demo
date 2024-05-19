@@ -59,7 +59,7 @@ void create_screen_main() {
                 {
                     lv_obj_t *obj = lv_btn_create(parent_obj);
                     objects.obj0 = obj;
-                    lv_obj_set_pos(obj, 645, -7);
+                    lv_obj_set_pos(obj, 800, 43);
                     lv_obj_set_size(obj, 100, 50);
                     lv_obj_add_event_cb(obj, event_handler_cb_main_obj0, LV_EVENT_ALL, flowState);
                     lv_obj_add_flag(obj, LV_OBJ_FLAG_SCROLL_ON_FOCUS);
@@ -84,7 +84,7 @@ void create_screen_main() {
                     // web site
                     lv_obj_t *obj = lv_img_create(parent_obj);
                     objects.web_site = obj;
-                    lv_obj_set_pos(obj, 17, 68);
+                    lv_obj_set_pos(obj, 603, 17);
                     lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
                     lv_img_set_src(obj, &img_web_site);
                     lv_obj_add_flag(obj, LV_OBJ_FLAG_ADV_HITTEST);

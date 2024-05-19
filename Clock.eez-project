@@ -468,6 +468,7 @@
             "conditionalStyles": [],
             "childStyles": []
           },
+          "hiddenInEditor": false,
           "timeline": [],
           "eventHandlers": [],
           "leftUnit": "px",
@@ -478,8 +479,8 @@
             {
               "objID": "23f3b61c-735f-41ed-c2ae-72b828473384",
               "type": "LVGLButtonWidget",
-              "left": 645,
-              "top": -7,
+              "left": 800,
+              "top": 43,
               "width": 100,
               "height": 50,
               "customInputs": [],
@@ -490,6 +491,7 @@
                 "conditionalStyles": [],
                 "childStyles": []
               },
+              "hiddenInEditor": false,
               "timeline": [],
               "eventHandlers": [
                 {
@@ -578,8 +580,8 @@
             {
               "objID": "81895c2c-6b09-4b9d-87f1-b09afd65caaf",
               "type": "LVGLImageWidget",
-              "left": 17,
-              "top": 68,
+              "left": 603,
+              "top": 17,
               "width": 142,
               "height": 12,
               "customInputs": [],
@@ -590,6 +592,7 @@
                 "conditionalStyles": [],
                 "childStyles": []
               },
+              "hiddenInEditor": false,
               "timeline": [
                 {
                   "objID": "0e1678c7-6144-4834-fb24-7265f4157783",
@@ -674,6 +677,7 @@
                 "conditionalStyles": [],
                 "childStyles": []
               },
+              "hiddenInEditor": false,
               "timeline": [
                 {
                   "objID": "00af3e09-1e8d-4ab4-9f83-c89bad3955fc",
@@ -774,6 +778,7 @@
                 "conditionalStyles": [],
                 "childStyles": []
               },
+              "hiddenInEditor": false,
               "timeline": [
                 {
                   "objID": "046f59c8-e429-492c-b7be-52db220d13d9",
@@ -946,13 +951,6 @@
           "input": "minutes"
         },
         {
-          "objID": "cedd8839-e7a1-493e-c7ee-d34e47875f9c",
-          "source": "ede83d20-c439-4c8b-86e0-2c699580b0bf",
-          "output": "result",
-          "target": "6715cd44-9676-4cf8-d016-8fc74fecbfb8",
-          "input": "seconds"
-        },
-        {
           "objID": "8cda07e5-3f3e-4b03-ac75-9f107b341445",
           "source": "679705d0-a1fc-4f8d-d017-88c322b50c2d",
           "output": "result",
@@ -1000,6 +998,13 @@
           "output": "PRESSED",
           "target": "188ac9ea-f534-46c2-fc59-dfe1d5f4d2ad",
           "input": "@seqin"
+        },
+        {
+          "objID": "253f5e46-0aec-4d23-b636-f4c7becc9a45",
+          "source": "ede83d20-c439-4c8b-86e0-2c699580b0bf",
+          "output": "result",
+          "target": "6715cd44-9676-4cf8-d016-8fc74fecbfb8",
+          "input": "seconds"
         }
       ],
       "localVariables": [],
