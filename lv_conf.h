@@ -29,7 +29,7 @@
 /*Enable more complex drawing routines to manage screens transparency.
  *Can be used if the UI is above an other layer, e.g. an OSD menu or video player.
  *Requires `LV_COLOR_DEPTH = 32` colors and the screen's `bg_opa` should be set to non LV_OPA_COVER value*/
-#define LV_COLOR_SCREEN_TRANSP    0
+#define LV_COLOR_SCREEN_TRANSP    1
 
 /*Images pixels with this color will not be drawn if they are  chroma keyed)*/
 #define LV_COLOR_CHROMA_KEY    lv_color_hex(0x00ff00)         /*pure green*/
@@ -149,7 +149,7 @@
  *-----------*/
 
 /*Enable the log module*/
-#define LV_USE_LOG      1
+#define LV_USE_LOG      0
 #if LV_USE_LOG
 
     /*How important log should be added:
@@ -163,7 +163,7 @@
 
     /*1: Print the log with 'printf';
     *0: User need to register a callback with `lv_log_register_print_cb()`*/
-#  define LV_LOG_PRINTF   1
+#  define LV_LOG_PRINTF   0
 
     /*Enable/disable LV_LOG_TRACE in modules that produces a huge number of logs*/
 #  define LV_LOG_TRACE_MEM            1
