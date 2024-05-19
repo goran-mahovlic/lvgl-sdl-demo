@@ -41,14 +41,14 @@ void create_screen_main() {
     lv_obj_t *obj = lv_obj_create(0);
     objects.main = obj;
     lv_obj_set_pos(obj, 0, 0);
-    lv_obj_set_size(obj, 948, 478);
+    lv_obj_set_size(obj, 800, 478);
     lv_obj_clear_flag(obj, LV_OBJ_FLAG_SCROLLABLE);
     {
         lv_obj_t *parent_obj = obj;
         {
             lv_obj_t *obj = lv_obj_create(parent_obj);
-            lv_obj_set_pos(obj, 0, 0);
-            lv_obj_set_size(obj, 948, 478);
+            lv_obj_set_pos(obj, 3, 1);
+            lv_obj_set_size(obj, 800, 478);
             lv_obj_clear_flag(obj, LV_OBJ_FLAG_SCROLLABLE);
             lv_obj_set_style_bg_grad_dir(obj, LV_GRAD_DIR_VER, LV_PART_MAIN | LV_STATE_DEFAULT);
             lv_obj_set_style_bg_color(obj, lv_color_hex(0xffec85ff), LV_PART_MAIN | LV_STATE_DEFAULT);
@@ -59,7 +59,7 @@ void create_screen_main() {
                 {
                     lv_obj_t *obj = lv_btn_create(parent_obj);
                     objects.obj0 = obj;
-                    lv_obj_set_pos(obj, 804, -2);
+                    lv_obj_set_pos(obj, 645, -7);
                     lv_obj_set_size(obj, 100, 50);
                     lv_obj_add_event_cb(obj, event_handler_cb_main_obj0, LV_EVENT_ALL, flowState);
                     lv_obj_add_flag(obj, LV_OBJ_FLAG_SCROLL_ON_FOCUS);
@@ -104,7 +104,7 @@ void create_screen_main() {
                     // watch
                     lv_obj_t *obj = lv_meter_create(parent_obj);
                     objects.watch = obj;
-                    lv_obj_set_pos(obj, 227, -8);
+                    lv_obj_set_pos(obj, 153, -8);
                     lv_obj_set_size(obj, 450, 450);
                     {
                         lv_meter_scale_t *scale = lv_meter_add_scale(obj);

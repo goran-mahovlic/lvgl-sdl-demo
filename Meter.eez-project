@@ -15,7 +15,7 @@
       "extensions": [],
       "imports": [],
       "flowSupport": true,
-      "displayWidth": 948,
+      "displayWidth": 800,
       "displayHeight": 478,
       "colorFormat": "BGR",
       "description": "Example of LVGL Meter widget",
@@ -446,8 +446,8 @@
         {
           "objID": "188ac9ea-f534-46c2-fc59-dfe1d5f4d2ad",
           "type": "EndActionComponent",
-          "left": 942,
-          "top": 566,
+          "left": 838,
+          "top": 29,
           "width": 87,
           "height": 24,
           "customInputs": [],
@@ -456,9 +456,9 @@
         {
           "objID": "00aedb07-4023-4699-bf70-49c40134d19f",
           "type": "LVGLPanelWidget",
-          "left": 0,
-          "top": 0,
-          "width": 948,
+          "left": 3,
+          "top": 1,
+          "width": 800,
           "height": 478,
           "customInputs": [],
           "customOutputs": [],
@@ -478,8 +478,8 @@
             {
               "objID": "23f3b61c-735f-41ed-c2ae-72b828473384",
               "type": "LVGLButtonWidget",
-              "left": 804,
-              "top": -2,
+              "left": 645,
+              "top": -7,
               "width": 100,
               "height": 50,
               "customInputs": [],
@@ -746,7 +746,7 @@
             {
               "objID": "6715cd44-9676-4cf8-d016-8fc74fecbfb8",
               "type": "LVGLMeterWidget",
-              "left": 227,
+              "left": 153,
               "top": -8,
               "width": 450,
               "height": 450,
@@ -1006,7 +1006,7 @@
       "name": "Main",
       "left": 0,
       "top": 0,
-      "width": 948,
+      "width": 800,
       "height": 478,
       "lvglLocalStyles": {
         "objID": "e85dbd5d-8325-1629-003b-86fd654ae635"
